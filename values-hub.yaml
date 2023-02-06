@@ -19,6 +19,7 @@ clusterGroup:
   - hub
   - config-demo
   - kustomize-http-example
+  - helm-http-example
 
   applications:
     acm:
@@ -56,6 +57,13 @@ clusterGroup:
       kustomize: true
       project: kustomize-http-example
       path: charts/all/kustomize-http-example
+
+    helm-http: 
+      name: helm-http-example
+      namespace: helm-http-example
+      project: helm-http-example
+      path: charts/all/helm-http-example
+
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
