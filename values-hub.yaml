@@ -18,6 +18,7 @@ clusterGroup:
   projects:
   - hub
   - config-demo
+  - kustomize-http-example
 
   applications:
     acm:
@@ -48,6 +49,13 @@ clusterGroup:
       namespace: config-demo
       project: config-demo
       path: charts/all/config-demo
+
+    kustomize-http: 
+      name: kustomize-http-example
+      namespace: kustomize-http-example
+      kustomize: true
+      project: kustomize-http-example
+      path: charts/all/kustomize-http-example
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
