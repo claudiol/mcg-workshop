@@ -64,6 +64,13 @@ clusterGroup:
       project: helm-http-example
       path: charts/all/helm-http-example
 
+    kustomize-buildconfig:
+      name: kustomize-buildconfig-example
+      namespace: kustomize-buildconfig
+      kustomize: true
+      project: kustomize-buildconfig-example 
+      path: charts/all/kustomize-buildconfig-example
+
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
