@@ -20,6 +20,7 @@ clusterGroup:
   - config-demo
   - kustomize-http-example
   - helm-http-example
+  - kustomize-buildconfig-example 
 
   applications:
     acm:
