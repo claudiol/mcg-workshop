@@ -67,7 +67,7 @@ clusterGroup:
 
     kustomize-buildconfig:
       name: kustomize-buildconfig-example
-      namespace: kustomize-buildconfig
+      namespace: buildconfig-example
       kustomize: true
       project: kustomize-buildconfig-example 
       path: charts/all/kustomize-buildconfig-example
