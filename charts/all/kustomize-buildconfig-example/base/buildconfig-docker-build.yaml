@@ -10,7 +10,7 @@ spec:
     type: Git
     git:
       uri: https://github.com/claudiol/s2i-cli-tools
-      ref: main
+      ref: example
     contextDir: containerfiles
   strategy:
     type: Docker                      
