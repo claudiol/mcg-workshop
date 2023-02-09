@@ -25,4 +25,5 @@ spec:
       kind: ImageStreamTag
       name: cli-tools:latest
   triggers:
-  - type: ImageChange
+  #- type: ImageChange
+  - type: ConfigChange
