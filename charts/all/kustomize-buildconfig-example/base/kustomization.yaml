@@ -4,3 +4,4 @@ resources:
 - ns-buildconfig-example.yaml
 - buildconfig-docker-build.yaml
 - imagestream-s2i-example.yaml
+- deployment-cli-tools.yaml 
