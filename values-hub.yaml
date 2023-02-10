@@ -21,6 +21,7 @@ clusterGroup:
   - kustomize-http-example
   - helm-http-example
   - kustomize-buildconfig-example 
+  - helm-buildconfig-example 
 
   applications:
     acm:
@@ -72,6 +73,11 @@ clusterGroup:
       project: kustomize-buildconfig-example 
       path: charts/all/kustomize-buildconfig-example
 
+    helm-buildconfig:
+      name: helm-buildconfig-example
+      namespace: helm-buildconfig-example
+      project: helm-buildconfig-example 
+      path: charts/all/helm-buildconfig-example
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
