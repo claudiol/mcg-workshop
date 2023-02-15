@@ -96,10 +96,10 @@ clusterGroup:
 
   managedClusterGroups:
     mcgAppClusters:
-      name: mcgAppClusters
+      name: mcgappclusters
       labels:
       - name: clusterGroup
-        value: mcgAppCluster
+        value: mcgappcluster
       helmOverrides:
       - name: clusterGroup.isHubCluster
         value: false
