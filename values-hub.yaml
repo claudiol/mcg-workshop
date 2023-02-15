@@ -95,11 +95,11 @@ clusterGroup:
       # verbosity: "-v"
 
   managedClusterGroups:
-    exampleRegion:
-      name: group-one
+    mcgAppClusters:
+      name: mcgAppClusters
       labels:
       - name: clusterGroup
-        value: group-one
+        value: mcgAppCluster
       helmOverrides:
       - name: clusterGroup.isHubCluster
         value: false
