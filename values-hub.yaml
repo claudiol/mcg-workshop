@@ -98,7 +98,8 @@ clusterGroup:
     mcgAppClusters:
       name: development
       labels:
-        clusterGroup: devel
+        - name: clusterGroup 
+          value: devel
 #      clusterSelector:
 #        matchExpressions:
 #          - key: clusterGroup
