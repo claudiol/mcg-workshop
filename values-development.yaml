@@ -5,7 +5,7 @@ global:
     installPlanApproval: Automatic
 
 clusterGroup:
-  name: mcgAppCluster
+  name: development
   isHubCluster: false
 
   namespaces:
