@@ -97,10 +97,14 @@ clusterGroup:
   managedClusterGroups:
     mcgAppClusters:
       name: development
-      clusterSelector:
-        labels:
-        - name: clusterGroup
-          value: devel
+      labels:
+        clusterGroup: devel
+#      clusterSelector:
+#        matchExpressions:
+#          - key: clusterGroup
+#            operator: In 
+#            values:
+#              - devel
       helmOverrides:
       - name: clusterGroup.isHubCluster
         value: false
