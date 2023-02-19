@@ -15,16 +15,16 @@ clusterGroup:
   subscriptions:
 
   projects:
-#    - eso
+    - eso
 #    - config-demo
 
   applications:
-#    golang-external-secrets:
-#      name: golang-external-secrets
-#      namespace: golang-external-secrets
-#      project: eso
-#      path: common/golang-external-secrets
-#
+    golang-external-secrets:
+      name: golang-external-secrets
+      namespace: golang-external-secrets
+      project: eso
+      path: common/golang-external-secrets
+
 #    config-demo:
 #      name: config-demo
 #      namespace: config-demo
