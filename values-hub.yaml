@@ -97,7 +97,7 @@ clusterGroup:
   managedClusterGroups:
     mcgAppClusters:
       name: development
-      labels:
+      acmlabels:
         - name: clusterGroup 
           value: devel
 #      clusterSelector:
