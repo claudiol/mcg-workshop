@@ -16,7 +16,7 @@ clusterGroup:
 
   projects:
     - eso
-#    - config-demo
+    - config-demo
 
   applications:
     golang-external-secrets:
@@ -25,11 +25,11 @@ clusterGroup:
       project: eso
       path: common/golang-external-secrets
 
-#    config-demo:
-#      name: config-demo
-#      namespace: config-demo
-#      project: config-demo
-#      path: charts/all/config-demo
+    config-demo:
+      name: config-demo
+      namespace: config-demo
+      project: config-demo
+      path: charts/all/config-demo
 
 
   # imperative:
