@@ -10,7 +10,7 @@ clusterGroup:
 
   namespaces:
 #    - config-demo
-#    - golang-external-secrets
+    - golang-external-secrets
  
   subscriptions:
 
