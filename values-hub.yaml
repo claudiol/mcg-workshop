@@ -113,6 +113,7 @@ clusterGroup:
           name: aws-uswest
           openshiftVersion: 4.10.18
           baseDomain: blueprints.rhecoeng.com
+          size: 1
           platform:
             aws:
               region: us-west-2
