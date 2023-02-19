@@ -9,7 +9,7 @@ clusterGroup:
   isHubCluster: false
 
   namespaces:
-#    - config-demo
+    - config-demo
     - golang-external-secrets
  
   subscriptions:
