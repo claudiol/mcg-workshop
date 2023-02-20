@@ -20,7 +20,7 @@ else
     log "Using [$KUBECONFIG] to connect to OpenShift"
 fi
 
-NAMESPACE=$(oc project kustomize-http-example --short 2>&1 | grep error)
+NAMESPACE=$(oc project kustomize-http-example --short 2>&1)
 if [ $? == 0 ]; then
   log "Checking resources in namespace [ $NAMESPACE ]"
   
@@ -41,7 +41,7 @@ if [ $? == 0 ]; then
       do
         log -n "Deleting Service [ $service ] in $NAMESPACE ... "
   	  oc delete $service
-  	  if [ $? == 0]; then
+  	  if [ $? == 0 ]; then
           log "Deleting Service [ $service ] in $NAMESPACE ... ok"
   	  fi
       done
